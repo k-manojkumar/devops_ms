@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: appms
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      run: appms
+  template:
+    metadata:
+      labels:
+        run: appms
+    spec:
+      containers:
+        - image: manojkumark/devops_ui:VERSION
+          imagePullPolicy: IfNotPresent
+          name: appms
+          ports:
+            - containerPort: 8880
+              protocol: TCP

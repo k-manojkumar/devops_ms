@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- <property name="connection.datasource">java:/comp/env/jdbc/CRDB</property> -->
+		<property name="hibernate.connection.url">jdbc:mysql://35.197.253.204:3306/dm_db</property>
+		<property name="hibernate.connection.username">dmuser</property>
+		<property name="hibernate.connection.password">dmuser</property>
+		<property name="hibernate.show-sql">true</property>
+		<!-- <property name="hibernate.connection.release_mode">auto</property> -->
+		<property name="hibernate.connection.autoReconnect">true</property>
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="connection.pool_size">1</property>
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+		<mapping class="com.tcs.poc.pojo.Resource" />
+		<mapping class="com.tcs.poc.pojo.Events" />
+	</session-factory>
+</hibernate-configuration>

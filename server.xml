@@ -1,0 +1,18 @@
+<server description="new server">
+
+	<featureManager>
+		<feature>servlet-3.1</feature>
+        <feature>jsp-2.3</feature>
+        <feature>jdbc-4.1</feature>
+        <feature>jaxrsClient-2.0</feature>
+        <feature>jaxrs-2.0</feature>
+        <feature>jpa-2.1</feature>s        
+    </featureManager>
+    
+    <httpEndpoint id='defaultHttpEndpoint' host='*' httpPort='8880'/>
+    
+    <applicationManager autoExpand="true" />
+    
+    <application autoStart="true" name='ColleagueService' location='ColleagueService.war' type='war' context-root='ColleagueService'/>
+
+</server>

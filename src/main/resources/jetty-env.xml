@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+
+<Configure id="OtherServer"
+    class="org.eclipse.jetty.maven.plugin.JettyWebAppContext">
+    <!-- <Call name="connector">
+    	<New class="org.eclipse.jetty.server.Connector">
+    		<Arg name ="Server"><Ref refid="OtherServer"/></Arg>
+    		<Set name="port">8880</Set>
+    	</New>
+    </Call> 
+    <New id="CRDB" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg></Arg>
+        <Arg>jdbc/CRDB</Arg>
+        <Arg>
+            <New class="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
+                <Set name="Url">jdbc:mysql://localhost:3306/colleaguerepo</Set>
+                <Set name="User">cruser</Set>
+                <Set name="Password">cruser</Set>
+            </New>
+        </Arg>
+    </New> -->
+</Configure>
