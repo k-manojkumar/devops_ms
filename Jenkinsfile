@@ -27,11 +27,8 @@ pipeline {
     stage ('compile'){
         steps{
             
-            script {
-            	withMaven( maven: 'maven'){
-            		sh "mvn clean compile package"
-            	}
-            }
+           sh "mvn clean compile package"
+           
         }
     }  
     stage ('Docker Build'){
