@@ -3,6 +3,7 @@ pipeline {
     label 'master'
   }
   environment {
+  	JAVA_HOME = '/usr/lib/jvm/java-8-openjdk-amd64'
     registry = 'manojkumark/devops_ms'
     registryCredential = 'DockerCreds'
     dockerImage = ''
