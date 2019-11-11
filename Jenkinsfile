@@ -16,9 +16,8 @@ pipeline {
     stage ('Sonar Scan'){
         steps{
             script{
-                def scannerHome = tool 'SonarScanner';
                 withSonarQubeEnv('DevOps'){
-                    sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=./sonar-project.properties"
+                    sh "mvn clean package sonar:sonar"
                 } 
             }
         }
