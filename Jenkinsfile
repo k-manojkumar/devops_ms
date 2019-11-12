@@ -8,8 +8,8 @@ pipeline {
     registryCredential = 'DockerCreds'
     dockerImage = ''
     PROJECT_ID = 'devops-258421'
-    CLUSTER_NAME = 'devops-app'
-    LOCATION = 'europe-north1-a'
+    CLUSTER_NAME = 'devops-ms'
+    LOCATION = 'europe-west1-b'
     CREDENTIALS_ID = 'jenkins-gke'
     PATH = ''
   }
