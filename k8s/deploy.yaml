@@ -13,7 +13,7 @@ spec:
         run: appms
     spec:
       containers:
-        - image: manojkumark/devops_ui:VERSION
+        - image: manojkumark/devops_ms:VERSION
           imagePullPolicy: IfNotPresent
           name: appms
           ports:
