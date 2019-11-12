@@ -67,7 +67,9 @@ pipeline {
     stage('Smoke Test') {
        steps{
             git 'https://github.com/k-manojkumar/devops_smoke_ms.git'
-        
+            
+          // Give some time for MS to start Up
+            sh 'sleep 20'
             sh 'mvn test'
             
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: './test-reports/', reportFiles: 'TestReport.html', reportName: 'Smoke Test Report', reportTitles: ''])
