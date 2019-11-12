@@ -13,6 +13,6 @@
     
     <applicationManager autoExpand="true" />
     
-    <application autoStart="true" name='ColleagueService' location='ColleagueService.war' type='war' context-root='ColleagueService'/>
+    <application autoStart="true" name='DevOpsService' location='DevOpsService.war' type='war' context-root='DevOpsService'/>
 
 </server>
