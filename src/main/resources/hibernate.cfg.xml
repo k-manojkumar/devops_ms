@@ -5,7 +5,7 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<!-- <property name="connection.datasource">java:/comp/env/jdbc/CRDB</property> -->
-		<property name="hibernate.connection.url">jdbc:mysql://35.197.253.204:3306/dm_db</property>
+		<property name="hibernate.connection.url">jdbc:mysql://my-db-service:1443/dm_db</property>
 		<property name="hibernate.connection.username">dmuser</property>
 		<property name="hibernate.connection.password">dmuser</property>
 		<property name="hibernate.show-sql">true</property>
